@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Title Page</title>
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<!-- Calculator Css -->
+		<link rel="stylesheet" href="calc.css">
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="container" id="calculator">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<div class="display">
+					<input type="text" readonly size="18" name="display" id="display">
+					</div>
+					<div class="col-md-12 pad">
+						<p>
+							<input type="button" class="button gray" value="mrc" onclick=''>
+						    <input type="button" class="button gray" value="m-" onclick=''>
+						    <input type="button" class="button gray" value="m+" onclick=''>
+						    <input type="button" class="button green" value="/" onclick='v("/")'>
+						</p>
+
+					    <p>
+						    <input type="button" class="button black" value="7" onclick='v("7")'>
+						    <input type="button" class="button black" value="8" onclick='v("8")'>
+						    <input type="button" class="button black" value="9" onclick='v("9")'>
+						    <input type="button" class="button green" value="*" onclick='v("*")'>
+					    </p>
+
+					    <p>
+						    <input type="button" class="button black" value="4" onclick='v("4")'>
+						    <input type="button" class="button black" value="5" onclick='v("5")'>
+						    <input type="button" class="button black" value="6" onclick='v("6")'>
+						    <input type="button" class="button green" value="-" onclick='v("-")'>
+						</p>
+						<p>
+						    <input type="button" class="button black" value="1" onclick='v("1")'>
+						    <input type="button" class="button black" value="2" onclick='v("2")'>
+						    <input type="button" class="button black" value="3" onclick='v("3")'>
+						    <input type="button" class="button green" value="+" onclick='v("+")'>
+						</p>
+						<p>
+							<input type="button" class="button black" value="0" onclick='v("0")'>
+							<input type="button" class="button black" value="." onclick='v(".")'>
+						    <input type="button" class="button black" value="C" onclick='c("")'>
+						    <input type="button" class="button orange" value="=" onclick='e()'>
+					    </p>
+					</div>	
+				</div>
+			</div>
+		</div>
+
+		<!-- jQuery -->
+		<script src="//code.jquery.com/jquery.js"></script>
+		<!-- Bootstrap JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+ 		<script src="calc.js"></script>
+	</body>
+</html>
